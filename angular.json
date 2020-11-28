@@ -141,32 +141,6 @@
         }
       },
       "schematics": {}
-    },
-    "landing-page": {
-      "projectType": "library",
-      "root": "libs/landing-page",
-      "sourceRoot": "libs/landing-page/src",
-      "prefix": "eichfx",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/landing-page/tsconfig.lib.json",
-              "libs/landing-page/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/landing-page/**/*"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/landing-page/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      },
-      "schematics": {}
     }
   },
   "cli": {

@@ -1,6 +1,6 @@
 header,
 nav,
-article,
+.article,
 aside,
 footer {
   border: 1px solid #000;
@@ -44,7 +44,6 @@ header {
 
 main {
   flex: auto;
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -54,9 +53,10 @@ main > nav {
   width: 200px;
 }
 
-main > article {
+main > .article {
   flex: auto;
   overflow-y: scroll;
+  background-color: red;
 }
 
 main > aside {
