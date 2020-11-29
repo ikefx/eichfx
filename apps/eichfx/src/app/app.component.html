@@ -4,28 +4,18 @@
 
 <main>
   <nav>
-    <eichfx-menu></eichfx-menu>
-    <ul>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">A Link</a></li>
-    </ul>
+    <div class="h-100 border rounded">
+      <eichfx-menu (activePane)="activePaneReceived($event)"></eichfx-menu>
+    </div>
   </nav>
-
-  <div class="article">
-    <eichfx-display></eichfx-display>
-  </div>
-
-
+  <eichfx-display class="article" [activePane]="activePane"></eichfx-display>
   <aside>
-    Sidebar
+    <div class="h-100 border rounded w-100">
+      Ads go here
+    </div>
   </aside>
-
 </main>
 
 <footer>
-  Something about bacon :-)
+  <eichfx-header class="header"></eichfx-header>
 </footer>
