@@ -18,7 +18,15 @@
             "tsConfig": "apps/eichfx/tsconfig.app.json",
             "aot": true,
             "assets": ["apps/eichfx/src/favicon.ico", "apps/eichfx/src/assets"],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "apps/eichfx/src/styles.css", "./node_modules/bootstrap/dist/css/bootstrap.css"],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css",
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css",
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
+              "apps/eichfx/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
