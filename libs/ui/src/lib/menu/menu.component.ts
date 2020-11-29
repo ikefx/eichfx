@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'eichfx-menu',
@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
-  mockButtons: number[] = [1, 2, 3, 4, 5];
 
   navMenu: any[] = [
     {
@@ -24,9 +22,15 @@ export class MenuComponent implements OnInit {
     }
   ];
 
+  @Output() activePane: EventEmitter<any> = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setActivePane(item: any) {
+    this.activePane.emit(item);
   }
 
 }

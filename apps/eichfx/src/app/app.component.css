@@ -12,15 +12,11 @@ main {
   flex-wrap: nowrap;
 }
 
-main > nav {
-  width: 200px;
-}
-
 main > .article {
   flex: auto;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 main > aside {
-  width: 200px;
+  width: 140px;
 }

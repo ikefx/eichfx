@@ -1,5 +1,5 @@
 <ul class="list-group p-1">
-  <li *ngFor="let nav of navMenu" class="border rounded list-unstyled p-1">
+  <li *ngFor="let nav of navMenu" class="border rounded list-unstyled p-1 nav-button" (click)="setActivePane(nav)">
     <i class="fa fa-chevron-right px-1"></i>
     {{ nav.label }}
   </li>

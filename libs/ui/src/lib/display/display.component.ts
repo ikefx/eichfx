@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'eichfx-display',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent implements OnInit {
+
+  @Input() activePane: any;
 
   constructor() { }
 

@@ -1,18 +1,19 @@
 <header>
-  <eichfx-header class="header"></eichfx-header>
+  <eichfx-header></eichfx-header>
 </header>
 
 <main>
   <nav>
-    <eichfx-menu></eichfx-menu>
+    <div class="h-100 border rounded">
+      <eichfx-menu (activePane)="activePaneReceived($event)"></eichfx-menu>
+    </div>
   </nav>
-
-  <eichfx-display class="article"></eichfx-display>
-
+  <eichfx-display class="article" [activePane]="activePane"></eichfx-display>
   <aside>
-    <eichfx-menu></eichfx-menu>
+    <div class="h-100 border rounded w-100">
+      Ads go here
+    </div>
   </aside>
-
 </main>
 
 <footer>
