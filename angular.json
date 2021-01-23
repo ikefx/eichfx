@@ -17,7 +17,10 @@
             "polyfills": "apps/eichfx/src/polyfills.ts",
             "tsConfig": "apps/eichfx/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/eichfx/src/favicon.ico", "apps/eichfx/src/assets"],
+            "assets": [
+              "apps/eichfx/src/favicon.ico",
+              "apps/eichfx/src/assets"
+            ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/bootstrap/scss/bootstrap.scss",
@@ -85,7 +88,10 @@
               "apps/eichfx/tsconfig.spec.json",
               "apps/eichfx/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/eichfx/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/eichfx/**/*"
+            ]
           }
         },
         "test": {
@@ -118,8 +124,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/eichfx-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/eichfx-e2e/**/*"]
+            "tsConfig": [
+              "apps/eichfx-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/eichfx-e2e/**/*"
+            ]
           }
         }
       }
@@ -137,7 +148,10 @@
               "libs/ui/tsconfig.lib.json",
               "libs/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/ui/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui/**/*"
+            ]
           }
         },
         "test": {
@@ -152,7 +166,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": false
   },
   "schematics": {
     "@nrwl/workspace": {
