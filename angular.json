@@ -28,6 +28,7 @@
               "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css",
               "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css",
               "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
+              "node_modules/roboto-fontface/css/roboto/roboto-fontface.css",
               "apps/eichfx/src/styles.css"
             ],
             "scripts": []

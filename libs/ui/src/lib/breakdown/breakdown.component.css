@@ -1,9 +1,15 @@
 li {
   height: 60px;
   cursor: pointer;
-  font-family: Arial, sans-serif;
+  font-family: Roboto-Thin, sans-serif;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-div {
-  font-family: Arial Black, sans-serif;
-}
+h5 {
+  font-family: Roboto-Thin, sans-serif;
+  padding-left: 0.25rem;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;}
