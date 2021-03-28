@@ -1,4 +1,9 @@
 li {
   height: 60px;
   cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+div .col-2 {
+  font-family: Arial Black, sans-serif;
 }

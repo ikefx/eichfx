@@ -1,6 +1,8 @@
 <ul class="list-group p-1">
-  <li *ngFor="let nav of navMenu" class="border rounded list-unstyled p-1 nav-button" (click)="setActivePane(nav)">
+  <li *ngFor="let entry of navMenu" class="border rounded list-unstyled p-1 nav-button" (click)="setActivePane(entry)"
+      (mouseenter)='entry.hover = "hover"' (mouseleave)='entry.hover = "false"'
+      [@button]="entry.hover">
     <i class="fa fa-chevron-right px-1"></i>
-    {{ nav.label }}
+    {{ entry.label }}
   </li>
 </ul>
