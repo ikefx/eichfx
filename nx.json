@@ -33,7 +33,7 @@
       "tags": [],
       "implicitDependencies": ["eichfx"]
     },
-    "ui": {
+    "eichfx-ui": {
       "tags": []
     }
   }

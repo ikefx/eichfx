@@ -1,0 +1,9 @@
+<div class="border rounded h-100 w-100 p-1">
+  <eichfx-landing-page
+    *ngIf="activePane?.route === 'demoReel' || !activePane"
+  ></eichfx-landing-page>
+  <eichfx-breakdown
+    *ngIf="activePane?.route === 'breakdown'"
+  ></eichfx-breakdown>
+  <eichfx-research *ngIf="activePane?.route === 'research'"></eichfx-research>
+</div>

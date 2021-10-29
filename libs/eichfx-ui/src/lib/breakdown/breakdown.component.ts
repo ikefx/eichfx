@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 
 @Component({
   selector: 'eichfx-breakdown',
@@ -7,74 +13,77 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   styleUrls: ['./breakdown.component.css'],
   animations: [
     trigger('button', [
-      state('false', style({
-        transform: 'translate(0,0)'
-      })),
-      state('hover', style({
-        transform: 'translate(10%,0)'
-      })),
+      state(
+        'false',
+        style({
+          transform: 'translate(0,0)',
+        })
+      ),
+      state(
+        'hover',
+        style({
+          transform: 'translate(10%,0)',
+        })
+      ),
       transition('false => hover', animate('100ms ease-in')),
-      transition('hover => false', animate('100ms ease-out'))
-    ])
-  ]
+      transition('hover => false', animate('100ms ease-out')),
+    ]),
+  ],
 })
-
 export class BreakdownComponent implements OnInit {
-
   zBrushRenderman: any[] = [
     {
       label: 'Terracotta',
-      hover: 'false'
+      hover: 'false',
     },
     {
       label: 'Hachiman',
-      hover: 'false'
-    }
+      hover: 'false',
+    },
   ];
 
   researchRenderman: any[] = [
     {
       label: 'AOVs',
-      hover: 'false'
+      hover: 'false',
     },
     {
       label: 'Point Clouds',
-      hover: 'false'
+      hover: 'false',
     },
     {
       label: 'Volumetrics',
-      hover: 'false'
+      hover: 'false',
     },
     {
       label: 'Subsurface Scattering',
-      hover: 'false'
+      hover: 'false',
     },
     {
       label: 'Magic Lights',
-      hover: 'false'
-    }
+      hover: 'false',
+    },
   ];
 
   researchZBrush: any[] = [
     {
       label: 'ZBrush Export',
-      hover: 'false'
+      hover: 'false',
     },
     {
       label: 'MatCap Texture',
-      hover: 'false'
-    }
+      hover: 'false',
+    },
   ];
 
   researchVue: any[] = [
     {
       label: 'USGS DEM Import',
-      hover: 'false'
-    }
+      hover: 'false',
+    },
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }
