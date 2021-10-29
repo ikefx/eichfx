@@ -1,14 +1,18 @@
 li {
   height: 60px;
   cursor: pointer;
-  font-family: Roboto-Thin, sans-serif;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  font-family: Roboto-Slab, sans-serif;
   overflow-x: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 h5 {
-  font-family: Roboto-Thin, sans-serif;
+  font-family: Roboto-Slab-Light, sans-serif;
   padding-left: 0.25rem;
   overflow-x: hidden;
   white-space: nowrap;

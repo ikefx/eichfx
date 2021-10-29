@@ -4,7 +4,11 @@ li {
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
-  font-family: G, sans-serif;
+  font-family: Roboto-Slab, sans-serif;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
 ul {
