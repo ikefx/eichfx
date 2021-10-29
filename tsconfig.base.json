@@ -16,8 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@eichfx/ui": ["libs/ui/src/index.ts"],
-      "@eichfx/landing-page": ["libs/landing-page/src/index.ts"]
+      "@eichfx/landing-page": ["libs/landing-page/src/index.ts"],
+      "@eichfx/eichfx-ui": ["libs/eichfx-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
