@@ -22,17 +22,17 @@ export class MenuComponent implements OnInit {
 
   navMenu: any[] = [
     {
-      label: 'Demo Reel',
+      label: 'Home',
       route: 'demoReel',
       hover: 'false'
     },
     {
-      label: 'Breakdown',
+      label: '3D CGI',
       route: 'breakdown',
       hover: 'false'
     },
     {
-      label: 'Research',
+      label: 'HTML5 Canvas',
       route: 'research',
       hover: 'false'
     }

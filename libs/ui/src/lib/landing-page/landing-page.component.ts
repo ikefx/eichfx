@@ -8,7 +8,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 export class LandingPageComponent implements OnInit, AfterViewInit {
 
   @ViewChild('vimeoPlayer') vimeoPlayer: ElementRef;
-  isloaded = false;
+
   constructor() { }
 
   ngOnInit(): void {
